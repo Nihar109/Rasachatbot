@@ -1,0 +1,75 @@
+newversion: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: claim_new
+  examples: |
+    - submit a new claim
+    - new claim
+    - had an accident
+    - was an incident
+    - claim
+    - help me
+
+- intent: give_name
+  examples: |
+    - my name is [Nihar]{"entity":"name","value":"Nihar"} 
+    - my name is [Arun]{"entity":"name","value":"Arun"} 
+    - my name is [Rahul]{"entity":"name","value":"Rahul"} 
+    - [Nihar]{"entity":"name","value":"Nihar"} 
+    - name is [Nihar]{"entity":"name","value":"Nihar"} 
+    - [Nihar]{"entity":"name","value":"Nihar"} is my name
+    - [Nihar]{"entity":"name","value":"Nihar"}  this side
+    - people call me [Nihar]{"entity":"name","value":"Nihar"} 
+
+- intent: policy_number
+  examples: |
+    - my policy number is [12345]{"entity":"number"}
+    - my policy is [12345]{"entity":"number"}
+    - [12345]{"entity":"number"}
+    - [12345]{"entity":"number"} is my policy
+    - policy is [12345]{"entity":"number"}
+
+- intent: incident_details
+  examples: |
+    - I hit the front gate
+    - ran into a pole
+    - I was drop from bike
+    - car hit me
+    - I was skidding on highway
+    - I was slept away car
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - goodbye
+    - adios
+    - later claim_new
+    - submit a new claim
+    - new claim
+    - had an accident
+    - was an incident

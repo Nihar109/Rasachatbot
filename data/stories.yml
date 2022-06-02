@@ -1,0 +1,27 @@
+version: "3.1"
+
+stories:
+
+#- story: insurance path
+#  steps:
+#  - intent: greet
+#  - action: utter_greet
+#  - action: utter_claim_new
+#  - intent: claim_new
+#  - action: utter_give_name
+#  - intent: give_name
+#    entities:
+#    - name: "Nihar"
+#  - slot_was_set:
+#      - name: "Nihar"
+#  - action: utter_policy_number
+#  - intent: policy_number
+#    entities:
+#    - number: "12345"
+#  - slot_was_set:
+#      - number: "12345"
+#  - action: utter_incident_details
+#  - intent: incident_details
+#  - action: utter_goodbye
+
+

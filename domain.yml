@@ -1,0 +1,55 @@
+version: "3.1"
+
+intents:
+  - greet
+  - claim_new
+  - give_name:
+      use_entities:
+        - name
+  - policy_number:
+      use_entities:
+        - number
+  - incident_details
+  - goodbye
+  
+entities:
+  - name
+  - number
+
+slots:
+  name:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: name
+  number:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: number
+
+
+responses:
+  utter_goodbye:
+    - text: "Thank you. That is all we need for now. We will contact you if there are more questions. Goodbye."
+  utter_greet:
+    - text: "Greetings. How can I help you?"
+  utter_claim_new:
+    - text: "OK. I can help you with that. Let's start with your full name so that we
+        can look up your policy."
+  utter_ask_name:
+    - text: "Please give your name."
+  utter_ask_number:
+    - text: "Give your policy number."
+  utter_incident_details:
+    - text: "Describe what happened in the incident."
+actions:
+  - action_submit
+forms:
+  user_details_form:
+    name:
+      - type: from_entity
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
